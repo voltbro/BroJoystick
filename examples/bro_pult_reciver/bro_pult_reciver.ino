@@ -7,12 +7,12 @@ size_t message_length;
 bool status;
 
 PacketSerial serial;
-    
+
 void setup() {
-  
+
   Serial.begin(57600);
   serial.begin(9600, 1);
-  
+
   serial.setPacketHandler(&onPacket);
 
 }
@@ -37,14 +37,12 @@ void onPacket(const uint8_t* buffer, size_t size)
             return 1;
         }
 
-    Serial.print(joystic.LeftJoy_X); Serial.print("|");//498
-    Serial.print(joystic.LeftJoy_Y); Serial.print("|");//533
-    Serial.print(joystic.RightJoy_X); Serial.print("|");//529
-    Serial.print(joystic.RightJoy_Y); Serial.print("|");//507
+    Serial.print(joystic.LeftJoy_X); Serial.print("|");
+    Serial.print(joystic.LeftJoy_Y); Serial.print("|");
+    Serial.print(joystic.RightJoy_X); Serial.print("|");
+    Serial.print(joystic.RightJoy_Y); Serial.print("|");
     Serial.print(joystic.btn1); Serial.print("|");
 
     Serial.print("\n");
-    
+
 }
-
-
