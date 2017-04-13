@@ -3,6 +3,8 @@
 
 Пульт управления БратьевВольт
 
+![Image Pult](https://github.com/voltbro/BroJoystick/docs/scheme-joystick.png)
+
 Дополнительные библиотеки Arduino
 -----
 Протокол Protobuf для микроконтроллеров
