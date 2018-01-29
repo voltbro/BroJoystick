@@ -4,16 +4,19 @@
 syntax = "proto2";
 
 message BroJoystick {
-   required uint32 LeftJoy_X = 1;
-   required uint32 LeftJoy_Y = 2;
-   required uint32 RightJoy_X = 3;
-   required uint32 RightJoy_Y = 4;
-   optional bool btn1 = 5 [default = false];
-   optional bool btn2 = 6  [default = false];
-   optional bool btn4 = 7  [default = false];
-   optional bool btn5 = 8  [default = false];
-   optional bool sw1 = 9  [default = false];
-   optional bool sw2 = 10  [default = false];
-   optional bool sw3 = 11  [default = false];
-   optional bool sw4 = 12  [default = false];
+   required uint32 LeftJoy_X = 1 [default = 512];
+   required uint32 LeftJoy_Y = 2 [default = 512];
+   required uint32 RightJoy_X = 3 [default = 512];
+   required uint32 RightJoy_Y = 4 [default = 512];
+   required uint32 LeftSlider = 5 [default = 0];
+   required uint32 RightSlider = 6 [default = 0];
+   required bool LeftJoy_Btn  = 7 [default = false];
+   required bool RightJoy_Btn = 8 [default = false];
+   required bool btn1 = 9 [default = false];
+   required bool btn2 = 10  [default = false];
+   required bool btn3 = 11 [default = false];
+   required bool btn4 = 12  [default = false];
+   required bool sw1 = 13  [default = false];
+   required bool sw2 = 14  [default = false];
+   required bool sw3 = 15  [default = false];
 }

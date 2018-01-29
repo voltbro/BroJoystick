@@ -39,9 +39,22 @@ void onPacket(const uint8_t* buffer, size_t size)
 
     Serial.print(joystic.LeftJoy_X); Serial.print("|");
     Serial.print(joystic.LeftJoy_Y); Serial.print("|");
+    Serial.print(joystic.LeftJoy_Btn); Serial.print("|");
     Serial.print(joystic.RightJoy_X); Serial.print("|");
     Serial.print(joystic.RightJoy_Y); Serial.print("|");
+    Serial.print(joystic.RightJoy_Btn); Serial.print("|");
+
+    Serial.print(joystic.LeftSlider); Serial.print("|");
+    Serial.print(joystic.RightSlider); Serial.print("|");
+
     Serial.print(joystic.btn1); Serial.print("|");
+    Serial.print(joystic.btn2); Serial.print("|");
+    Serial.print(joystic.btn3); Serial.print("|");
+    Serial.print(joystic.btn4); Serial.print("|");
+
+    Serial.print(joystic.sw1); Serial.print("|");
+    Serial.print(joystic.sw2); Serial.print("|");
+    Serial.print(joystic.sw3);
 
     Serial.print("\n");
 
