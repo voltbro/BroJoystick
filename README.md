@@ -3,7 +3,7 @@
 
 Пульт управления БратьевВольт
 
-![Image Pult](https://raw.githubusercontent.com/voltbro/BroJoystick/master/docs/scheme-joystick.png)
+![Image Pult](https://raw.githubusercontent.com/voltbro/BroJoystick/master/docs/scheme-joystick_v2.png)
 
 Дополнительные библиотеки Arduino
 -----
