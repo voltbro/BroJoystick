@@ -1,13 +1,13 @@
-Братьея Вольт JoyStick
+JoyBro
 ==============
 
 Пульт управления БратьевВольт
 
 ![Image Pult](https://raw.githubusercontent.com/voltbro/BroJoystick/master/docs/scheme-joystick_v2.png)
 
-Дополнительные библиотеки Arduino
+Additiona Arduino libraries
 -----
-Протокол Protobuf для микроконтроллеров
+Protobuf microcontroller's protocol
 https://github.com/nanopb/nanopb
 
 PacketSerial работа с пакетами с кодирование COBS
