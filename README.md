@@ -1,37 +1,34 @@
 JoyBro
 ==============
-
-Пульт управления БратьевВольт
-
 ![Image Pult](https://raw.githubusercontent.com/voltbro/BroJoystick/master/docs/scheme-joystick_v2.png)
 
-Additiona Arduino libraries
+Additional Arduino libraries
 -----
-Protobuf microcontroller's protocol
+Protobuf MicroProcessor's protocol lib
 https://github.com/nanopb/nanopb
 
-PacketSerial работа с пакетами с кодирование COBS
+PacketSerial - packets managing and COBS encoding lib
 https://github.com/bakercp/PacketSerial
 
-Модули необходимо установить в Директорию libraries в папке Arduino
+Libraries should be installed into Arduino\Libraries\
 
 
-Описание
+Description
 -----
-Файл в формате Protobuf для формирования структуры данных [BroJoystick.proto](https://github.com/voltbro/BroJoystick/BroJoystick.proto)
+Protobuf file for data structure design [BroJoystick.proto](https://github.com/voltbro/BroJoystick/BroJoystick.proto)
 
-Отправка данных [examples/bro_pult/bro_pult.ino](https://github.com/voltbro/BroJoystick/examples/bro_pult/bro_pult.ino)
+Data sending [examples/bro_pult/bro_pult.ino](https://github.com/voltbro/BroJoystick/examples/bro_pult/bro_pult.ino)
 
-Прием данных и вывод в Serial [examples/bro_pult_reciver/bro_pult_reciver.ino](https://github.com/voltbro/BroJoystick/examples/bro_pult_reciver/bro_pult_reciver.ino)
+Data recieving and Serial output [examples/bro_pult_reciver/bro_pult_reciver.ino](https://github.com/voltbro/BroJoystick/examples/bro_pult_reciver/bro_pult_reciver.ino)
 
 
-Дополнительно
+Extras
 -----
 
-Описание протокола Protobuf
+Protobuf description
 https://developers.google.com/protocol-buffers/
 
-Генерация С файлов на основе .proto данных
+C files based on .proto data
 ```
 protoc --nanopb_out=. BroJoystick.proto
 ```
